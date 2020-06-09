@@ -10,7 +10,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/bettercap/gatt/linux"
+	"github.com/koppacetic/gatt/linux"
 )
 
 type peripheral struct {
@@ -433,7 +433,7 @@ func (p *peripheral) loop() {
 		copy(b, buf)
 
 		if (b[0] != attOpHandleNotify) && (b[0] != attOpHandleInd) {
-			log.Printf("response 0x%x", b[0])
+			// log.Printf("response 0x%x", b[0])
 			rspc <- b
 			continue
 		}

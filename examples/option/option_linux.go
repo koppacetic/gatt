@@ -1,8 +1,8 @@
 package option
 
 import (
-	"github.com/bettercap/gatt"
-	"github.com/bettercap/gatt/linux/cmd"
+	"github.com/koppacetic/gatt"
+	"github.com/koppacetic/gatt/linux/cmd"
 )
 
 var DefaultClientOptions = []gatt.Option{
